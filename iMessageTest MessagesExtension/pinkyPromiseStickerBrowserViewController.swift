@@ -20,7 +20,7 @@ class pinkyPromiseStickerBrowserViewController: MSStickerBrowserViewController {
     
     func loadStickers() {
         createSticker(asset: "PinkyPromiseStickerMedium", localizedDescription: "pinkyPromise sticker")
-        createSticker(asset: "002", localizedDescription: "cat sticker")
+        createSticker(asset: "001", localizedDescription: "cat sticker")
     }
     
     var stickers = [MSSticker]()
