@@ -13,6 +13,7 @@
 		B57661691F80306800EE0C4C /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57661681F80306800EE0C4C /* MessagesViewController.swift */; };
 		B576616C1F80306800EE0C4C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B576616A1F80306800EE0C4C /* MainInterface.storyboard */; };
 		B576616E1F80306800EE0C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B576616D1F80306800EE0C4C /* Assets.xcassets */; };
+		B596A7441F89539E00A853C1 /* PinkyPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596A7431F89539E00A853C1 /* PinkyPromiseViewController.swift */; };
 		B5D250091F84683000FF9E2B /* pinkyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D250081F84683000FF9E2B /* pinkyPromise.swift */; };
 		B5D2500B1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2500A1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift */; };
 		B5DEB5E51F8720BE00C5F4CD /* 013.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5D61F8720BC00C5F4CD /* 013.png */; };
@@ -65,6 +66,7 @@
 		B576616B1F80306800EE0C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		B576616D1F80306800EE0C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B576616F1F80306800EE0C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B596A7431F89539E00A853C1 /* PinkyPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyPromiseViewController.swift; sourceTree = "<group>"; };
 		B5CD2C8B1F873FA000EACA4E /* iMessageTest MessagesExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iMessageTest MessagesExtension.entitlements"; sourceTree = "<group>"; };
 		B5D250081F84683000FF9E2B /* pinkyPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinkyPromise.swift; sourceTree = "<group>"; };
 		B5D2500A1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinkyPromiseStickerBrowserViewController.swift; sourceTree = "<group>"; };
@@ -138,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				B5CD2C8B1F873FA000EACA4E /* iMessageTest MessagesExtension.entitlements */,
+				B57661681F80306800EE0C4C /* MessagesViewController.swift */,
+				B576616A1F80306800EE0C4C /* MainInterface.storyboard */,
 				B5DEB5D71F8720BC00C5F4CD /* 002.png */,
 				B5DEB5DE1F8720BD00C5F4CD /* 003.png */,
 				B5DEB5E21F8720BE00C5F4CD /* 004.png */,
@@ -153,11 +157,10 @@
 				B5DEB5E41F8720BE00C5F4CD /* 014.png */,
 				B5DEB5D81F8720BC00C5F4CD /* 015.png */,
 				B5DEB5D51F868AFD00C5F4CD /* 001.png */,
-				B57661681F80306800EE0C4C /* MessagesViewController.swift */,
-				B576616A1F80306800EE0C4C /* MainInterface.storyboard */,
 				B576616D1F80306800EE0C4C /* Assets.xcassets */,
 				B576616F1F80306800EE0C4C /* Info.plist */,
 				B5D2500A1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift */,
+				B596A7431F89539E00A853C1 /* PinkyPromiseViewController.swift */,
 			);
 			path = "iMessageTest MessagesExtension";
 			sourceTree = "<group>";
@@ -224,7 +227,7 @@
 					};
 					B576615F1F80306800EE0C4C = {
 						CreatedOnToolsVersion = 9.0;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -291,6 +294,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B596A7441F89539E00A853C1 /* PinkyPromiseViewController.swift in Sources */,
 				B57661691F80306800EE0C4C /* MessagesViewController.swift in Sources */,
 				B5D2500B1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift in Sources */,
 				B5D250091F84683000FF9E2B /* pinkyPromise.swift in Sources */,
@@ -431,8 +435,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_ENTITLEMENTS = "iMessageTest MessagesExtension/iMessageTest MessagesExtension.entitlements";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92B3RLY935;
 				INFOPLIST_FILE = "iMessageTest MessagesExtension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -450,8 +455,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
 				CODE_SIGN_ENTITLEMENTS = "iMessageTest MessagesExtension/iMessageTest MessagesExtension.entitlements";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 92B3RLY935;
 				INFOPLIST_FILE = "iMessageTest MessagesExtension/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";

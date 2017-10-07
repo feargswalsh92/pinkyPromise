@@ -12,7 +12,58 @@ import Messages
 class MessagesViewController: MSMessagesAppViewController {
     
     var browserViewController:pinkyPromiseStickerBrowserViewController!
+    override func didBecomeActive(with conversation: MSConversation) {
+        super.didBecomeActive(with: conversation)
+        presentChildViewController()
+    }
+    //MARK: Child view controller presentation
+    private func presentChildViewController() {
+        var controller = UIViewController()
+        if presentationStyle == .compact {
+            let pinkyPromise = PinkyPromise(isPressed: false)
+            controller = instantiatePinkyPromiseController(with: pinkyPromise)
+        } else {
+            //isPressed true?
+            let pinkyPromise = PinkyPromise(isPressed: false)
+            controller = instantiatePinkyPromiseController(with: pinkyPromise)
+        }
+        
+        
+        //embed the new controller
+        addChildViewController(controller)
+        
+        controller.view.frame = view.bounds
+        controller.view.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(controller.view)
+        
+        
+        controller.view.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
+        controller.view.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
+        controller.view.topAnchor.constraint(equalTo: view.topAnchor).isActive = true
+        controller.view.bottomAnchor.constraint(equalTo: view.bottomAnchor).isActive = true
+        
+        controller.didMove(toParentViewController: self)
+    }
     
+    
+    private func instantiatePinkyPromiseController(with pinkyPromise: PinkyPromise) -> UIViewController {
+       //Instantiate a "PinkyPromiseController"
+        guard let controller =
+        storyboard?.instantiateViewController(withIdentifier: PinkyPromiseViewController.storyboardIdentifier) as?
+            PinkyPromiseViewController else { fatalError("Unable to instantiate PinkyPromiseViewController from the storyboard") }
+        
+            //controller.delegate = self
+                
+            return controller
+    }
+    
+    override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
+        super.willTransition(to: presentationStyle)
+        presentChildViewController()
+        // Called before the extension transitions to a new presentation style.
+        
+        // Use this method to prepare for the change in presentation style.
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         browserViewController = pinkyPromiseStickerBrowserViewController(stickerSize: .regular)
@@ -28,11 +79,48 @@ class MessagesViewController: MSMessagesAppViewController {
        
     }
     
+    fileprivate func composeMessage(with pinkyPromise: PinkyPromise, caption: String, session: MSSession? = nil) -> MSMessage {
+        let messageCaption = NSLocalizedString("Wanna Pinky Promise?", comment: " ")
+        
+       // var components = URLComponents()
+        //components.queryItems = pinkyPromise.queryItems
+        let layout = MSMessageTemplateLayout()
+        
+        //caption = Wanna pinky promise?
+        layout.caption = messageCaption
+        
+
+        let message = MSMessage()
+        message.layout = layout
+        message.accessibilityLabel = messageCaption
+        return message
+    }
+    
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 }
+
+//extension MessagesViewController : pinkyPromiseHistoryViewControllerDelegate {
+//    func historyViewControllerAddButtonTapped(_ controller: pinkyPromiseHistoryViewController){
+//        requestPresentationStyle(.expanded)
+//        //composeMessage(with: <#T##PinkyPromise#>, caption: <#T##String#>)
+//    }
+//}
+//
+//    extension MessagesViewController: pinkyPromiseViewControllerDelegate {
+//        func pinkyPromiseBuilderViewController( _ controller: pinkyPromiseBuilderViewController,
+//                                                didSelect pinkyPromiseHalf: PinkyPromiseHalf, for pinkyPromise: PinkyPromise){
+//            var messageCaption = string
+//            composeMessage(with: pinkyPromise, caption: messageCaption)
+//            dismiss()
+//        }
+//    }
+
+    
 
 
 
@@ -78,12 +166,8 @@ class MessagesViewController: MSMessagesAppViewController {
 //        // Use this to clean up state related to the deleted message.
 //    }
 //
-//    override func willTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
-//        // Called before the extension transitions to a new presentation style.
-//
-//        // Use this method to prepare for the change in presentation style.
-//    }
-//
+
+
 //    override func didTransition(to presentationStyle: MSMessagesAppPresentationStyle) {
 //        // Called after the extension transitions to a new presentation style.
 //
