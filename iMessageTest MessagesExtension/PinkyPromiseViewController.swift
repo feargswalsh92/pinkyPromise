@@ -17,4 +17,12 @@ class PinkyPromiseViewController: UICollectionViewController {
     }
     
     static let storyboardIdentifier = "PinkyPromiseViewController"
+    
+    var pinkyPromise: PinkyPromise?
+}
+
+protocol PinkyPromiseViewControllerDelegate: class {
+    ///Called when a user chooses to add a new Pinky Promise in the PinkyPromiseViewController
+    func pinkyPromiseViewControllerDidSelectAdd( _ controller:
+    PinkyPromiseViewController)
 }

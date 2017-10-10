@@ -14,22 +14,9 @@
 		B576616C1F80306800EE0C4C /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B576616A1F80306800EE0C4C /* MainInterface.storyboard */; };
 		B576616E1F80306800EE0C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B576616D1F80306800EE0C4C /* Assets.xcassets */; };
 		B596A7441F89539E00A853C1 /* PinkyPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B596A7431F89539E00A853C1 /* PinkyPromiseViewController.swift */; };
+		B5C7BD181F89B4D20019CC06 /* BuildPinkyPromiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C7BD171F89B4D20019CC06 /* BuildPinkyPromiseViewController.swift */; };
 		B5D250091F84683000FF9E2B /* pinkyPromise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D250081F84683000FF9E2B /* pinkyPromise.swift */; };
 		B5D2500B1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D2500A1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift */; };
-		B5DEB5E51F8720BE00C5F4CD /* 013.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5D61F8720BC00C5F4CD /* 013.png */; };
-		B5DEB5E61F8720BE00C5F4CD /* 002.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5D71F8720BC00C5F4CD /* 002.png */; };
-		B5DEB5E71F8720BE00C5F4CD /* 015.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5D81F8720BC00C5F4CD /* 015.png */; };
-		B5DEB5E91F8720BE00C5F4CD /* 005.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5DA1F8720BC00C5F4CD /* 005.png */; };
-		B5DEB5EA1F8720BE00C5F4CD /* 008.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5DB1F8720BC00C5F4CD /* 008.png */; };
-		B5DEB5EB1F8720BE00C5F4CD /* 009.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5DC1F8720BD00C5F4CD /* 009.png */; };
-		B5DEB5EC1F8720BE00C5F4CD /* 010.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5DD1F8720BD00C5F4CD /* 010.png */; };
-		B5DEB5ED1F8720BE00C5F4CD /* 003.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5DE1F8720BD00C5F4CD /* 003.png */; };
-		B5DEB5EE1F8720BE00C5F4CD /* 012.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5DF1F8720BD00C5F4CD /* 012.png */; };
-		B5DEB5EF1F8720BE00C5F4CD /* 006.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5E01F8720BD00C5F4CD /* 006.png */; };
-		B5DEB5F01F8720BE00C5F4CD /* 007.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5E11F8720BD00C5F4CD /* 007.png */; };
-		B5DEB5F11F8720BE00C5F4CD /* 004.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5E21F8720BE00C5F4CD /* 004.png */; };
-		B5DEB5F21F8720BE00C5F4CD /* 011.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5E31F8720BE00C5F4CD /* 011.png */; };
-		B5DEB5F31F8720BE00C5F4CD /* 014.png in Resources */ = {isa = PBXBuildFile; fileRef = B5DEB5E41F8720BE00C5F4CD /* 014.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,24 +54,10 @@
 		B576616D1F80306800EE0C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B576616F1F80306800EE0C4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B596A7431F89539E00A853C1 /* PinkyPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinkyPromiseViewController.swift; sourceTree = "<group>"; };
+		B5C7BD171F89B4D20019CC06 /* BuildPinkyPromiseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildPinkyPromiseViewController.swift; sourceTree = "<group>"; };
 		B5CD2C8B1F873FA000EACA4E /* iMessageTest MessagesExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iMessageTest MessagesExtension.entitlements"; sourceTree = "<group>"; };
 		B5D250081F84683000FF9E2B /* pinkyPromise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinkyPromise.swift; sourceTree = "<group>"; };
 		B5D2500A1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pinkyPromiseStickerBrowserViewController.swift; sourceTree = "<group>"; };
-		B5DEB5D51F868AFD00C5F4CD /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
-		B5DEB5D61F8720BC00C5F4CD /* 013.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 013.png; path = StickerPack/013.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5D71F8720BC00C5F4CD /* 002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 002.png; path = StickerPack/002.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5D81F8720BC00C5F4CD /* 015.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 015.png; path = StickerPack/015.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5DA1F8720BC00C5F4CD /* 005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 005.png; path = StickerPack/005.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5DB1F8720BC00C5F4CD /* 008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 008.png; path = StickerPack/008.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5DC1F8720BD00C5F4CD /* 009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 009.png; path = StickerPack/009.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5DD1F8720BD00C5F4CD /* 010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 010.png; path = StickerPack/010.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5DE1F8720BD00C5F4CD /* 003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 003.png; path = StickerPack/003.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5DF1F8720BD00C5F4CD /* 012.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 012.png; path = StickerPack/012.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5E01F8720BD00C5F4CD /* 006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 006.png; path = StickerPack/006.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5E11F8720BD00C5F4CD /* 007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 007.png; path = StickerPack/007.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5E21F8720BE00C5F4CD /* 004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 004.png; path = StickerPack/004.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5E31F8720BE00C5F4CD /* 011.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 011.png; path = StickerPack/011.png; sourceTree = SOURCE_ROOT; };
-		B5DEB5E41F8720BE00C5F4CD /* 014.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 014.png; path = StickerPack/014.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,25 +115,11 @@
 				B5CD2C8B1F873FA000EACA4E /* iMessageTest MessagesExtension.entitlements */,
 				B57661681F80306800EE0C4C /* MessagesViewController.swift */,
 				B576616A1F80306800EE0C4C /* MainInterface.storyboard */,
-				B5DEB5D71F8720BC00C5F4CD /* 002.png */,
-				B5DEB5DE1F8720BD00C5F4CD /* 003.png */,
-				B5DEB5E21F8720BE00C5F4CD /* 004.png */,
-				B5DEB5DA1F8720BC00C5F4CD /* 005.png */,
-				B5DEB5E01F8720BD00C5F4CD /* 006.png */,
-				B5DEB5E11F8720BD00C5F4CD /* 007.png */,
-				B5DEB5DB1F8720BC00C5F4CD /* 008.png */,
-				B5DEB5DC1F8720BD00C5F4CD /* 009.png */,
-				B5DEB5DD1F8720BD00C5F4CD /* 010.png */,
-				B5DEB5E31F8720BE00C5F4CD /* 011.png */,
-				B5DEB5DF1F8720BD00C5F4CD /* 012.png */,
-				B5DEB5D61F8720BC00C5F4CD /* 013.png */,
-				B5DEB5E41F8720BE00C5F4CD /* 014.png */,
-				B5DEB5D81F8720BC00C5F4CD /* 015.png */,
-				B5DEB5D51F868AFD00C5F4CD /* 001.png */,
 				B576616D1F80306800EE0C4C /* Assets.xcassets */,
 				B576616F1F80306800EE0C4C /* Info.plist */,
 				B5D2500A1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift */,
 				B596A7431F89539E00A853C1 /* PinkyPromiseViewController.swift */,
+				B5C7BD171F89B4D20019CC06 /* BuildPinkyPromiseViewController.swift */,
 			);
 			path = "iMessageTest MessagesExtension";
 			sourceTree = "<group>";
@@ -268,22 +227,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B5DEB5E61F8720BE00C5F4CD /* 002.png in Resources */,
-				B5DEB5E51F8720BE00C5F4CD /* 013.png in Resources */,
-				B5DEB5EA1F8720BE00C5F4CD /* 008.png in Resources */,
-				B5DEB5ED1F8720BE00C5F4CD /* 003.png in Resources */,
-				B5DEB5EF1F8720BE00C5F4CD /* 006.png in Resources */,
-				B5DEB5EC1F8720BE00C5F4CD /* 010.png in Resources */,
-				B5DEB5F11F8720BE00C5F4CD /* 004.png in Resources */,
 				B576616E1F80306800EE0C4C /* Assets.xcassets in Resources */,
-				B5DEB5E71F8720BE00C5F4CD /* 015.png in Resources */,
-				B5DEB5EB1F8720BE00C5F4CD /* 009.png in Resources */,
-				B5DEB5EE1F8720BE00C5F4CD /* 012.png in Resources */,
-				B5DEB5F21F8720BE00C5F4CD /* 011.png in Resources */,
-				B5DEB5F01F8720BE00C5F4CD /* 007.png in Resources */,
 				B576616C1F80306800EE0C4C /* MainInterface.storyboard in Resources */,
-				B5DEB5E91F8720BE00C5F4CD /* 005.png in Resources */,
-				B5DEB5F31F8720BE00C5F4CD /* 014.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +242,7 @@
 				B596A7441F89539E00A853C1 /* PinkyPromiseViewController.swift in Sources */,
 				B57661691F80306800EE0C4C /* MessagesViewController.swift in Sources */,
 				B5D2500B1F84869E00FF9E2B /* pinkyPromiseStickerBrowserViewController.swift in Sources */,
+				B5C7BD181F89B4D20019CC06 /* BuildPinkyPromiseViewController.swift in Sources */,
 				B5D250091F84683000FF9E2B /* pinkyPromise.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
